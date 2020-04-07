@@ -3,13 +3,12 @@ pragma solidity 0.5.11;
 
 contract RsTx {
 
-    event NewRsTx(uint256 noncePointX, uint256 noncePointY, bytes encryptedRecipient);
+    event NewRsTx(bytes noncePoint, bytes encryptedRecipient);
 
     function rsTx(
-        uint256 noncePointX,
-        uint256 noncePointY,
+        bytes calldata noncePoint,
         bytes calldata encryptedRecipient
     ) external {
-        emit NewRsTx(noncePointX, noncePointY, encryptedRecipient);
+        emit NewRsTx(noncePoint, encryptedRecipient);
     }
 }
