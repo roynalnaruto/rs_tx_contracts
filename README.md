@@ -45,3 +45,6 @@ yarn truffle compile
 ```
 yarn truffle migrate --network development
 ```
+
+# License
+[In detail here](https://github.com/roynalnaruto/rs_tx_contracts/blob/master/LICENSE.md)
